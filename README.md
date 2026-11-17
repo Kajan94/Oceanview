@@ -6,15 +6,15 @@ Projet d’équipe réalisé à cinq en BUT Informatique à l’IUT de Créteil-
 
 ### Accueil
 
-[![Page d’accueil d’OcéanView avec les accès à la carte, aux graphiques et aux favoris](docs/accueil-oceanview.png)](docs/accueil-oceanview.png)
+[![Page d’accueil d’OcéanView avec le logo et les accès à la carte, aux graphiques et aux favoris](docs/accueil-oceanview.png)](docs/accueil-oceanview.png)
 
-Capture du projet d’origine, extraite du rapport.
+Page d’accueil du site avec le logo OcéanView.
 
-### Carte interactive
+### Carte d’intensité
 
-[![Carte des mesures de température avec filtres de période, zone et mode de visualisation](docs/carte-demo.jpg)](docs/carte-demo.jpg)
+[![Carte d’intensité de la température de surface](docs/carte-chaleur-oceanview.jpg)](docs/carte-chaleur-oceanview.jpg)
 
-Carte de points sur les données de démonstration, avec les mesures regroupées selon le zoom.
+Capture du projet d’origine. Le fond de carte est crédité dans l’image.
 
 ### Graphique d’évolution
 
@@ -66,15 +66,11 @@ python -m flask --app run init-demo --admin-email kajan@example.test
 
 Choisir un mot de passe d’au moins **8 caractères**, puis le confirmer. Démarrer le site avec `python run.py`, se connecter avec ce compte et ouvrir [le tableau de bord d’administration](http://127.0.0.1:5001/admin/dashboard).
 
-## Architecture et carte de chaleur
+## Architecture
 
 [Voir le schéma d’architecture du projet](docs/architecture-oceanview.png)
 
 Le projet d’origine a traité les données Copernicus Marine en Python avant de les charger dans MySQL. L’API Flask sert les mesures sélectionnées par zone, indicateur et période. Leaflet affiche la carte et Plotly présente les séries temporelles.
-
-[![Carte d’intensité de la température de surface](docs/carte-chaleur-oceanview.jpg)](docs/carte-chaleur-oceanview.jpg)
-
-Capture du projet d’origine. Le fond de carte est crédité dans l’image. La version publique fournit son propre jeu de démonstration.
 
 ## Suivre une donnée dans le code
 
