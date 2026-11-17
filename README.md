@@ -29,7 +29,7 @@ python -m flask --app run init-demo
 python run.py
 ~~~
 
-Ouvrir [localhost:5001](http://127.0.0.1:5001). La carte et les graphiques chargent des ressources externes. L’option `--admin-email admin@example.test` de `init-demo` permet de créer un compte d’administration local avec un mot de passe choisi au lancement.
+Ouvrir [localhost:5001](http://127.0.0.1:5001). La carte et les graphiques chargent des ressources externes. La commande `python -m flask --app run init-demo --admin-email kajan@example.test` permet de créer un compte d’administration local avec un mot de passe choisi au lancement.
 
 ## Architecture et carte de chaleur
 
