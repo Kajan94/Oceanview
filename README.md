@@ -34,7 +34,7 @@ L’application d’origine a utilisé des données de [Copernicus Marine](https
 
 ## Lancer en local
 
-Préparer Python 3.12 ou 3.14 et MySQL 8.4. Avec un compte d’administration MySQL, exécuter ce script après avoir choisi un mot de passe local.
+Préparer Python 3.12 ou 3.14 et MySQL 8.4. Avec un compte d’administration MySQL, exécuter ce script.
 
 ~~~sql
 CREATE DATABASE oceanview_demo CHARACTER SET utf8mb4;
