@@ -208,8 +208,8 @@ function updateWeeklyChart() {
             
             const layout = { 
                 title: `Évolution : ${label}`, 
-                xaxis: { title: 'Date', automargin: true, tickangle: -45 }, 
-                yaxis: { title: `${cleanLabel} (${unit})` },
+                xaxis: { title: { text: 'Date' }, automargin: true, tickangle: -45 }, 
+                yaxis: { title: { text: `${cleanLabel} (${unit})` }, automargin: true },
                 margin: { b: 150, l: 70, r: 40, t: 50 }, 
                 autosize: true
             };
@@ -252,7 +252,7 @@ function updateCorrelationChart() {
             
             const layout = {
                 title: `${l1} vs ${l2}`,
-                xaxis: { title: 'Date', automargin: true, tickangle: -45 },
+                xaxis: { title: { text: 'Date' }, automargin: true, tickangle: -45 },
                 yaxis: { title: {text: `${cleanL1} (${u1})`, font:{color: c1}} },
                 yaxis2: { title: {text: `${cleanL2} (${u2})`, font:{color: c2}}, overlaying: 'y', side: 'right', showgrid: false },
                 legend: { orientation: 'h', y: 1.1 }, 
@@ -291,7 +291,7 @@ function updateDistributionChart() {
             const layout = { 
                 title: `Distribution : ${label}`,
                 xaxis: { title: {text: `${cleanLabel} (${unit})`, font: { size: 14, color: '#333' }}, automargin: true },
-                yaxis: { title: "Nombre de mesures" },
+                yaxis: { title: { text: 'Nombre de mesures' }, automargin: true },
                 bargap: 0.05,
                 margin: { b: 150, l: 70, r: 40, t: 60 },
                 autosize: true
