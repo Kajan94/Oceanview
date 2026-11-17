@@ -75,6 +75,6 @@ Le projet d’origine a traité les données Copernicus Marine en Python avant d
 
 ## Suivre une donnée dans le code
 
-Le script [app/demo.py](app/demo.py) peuple le schéma [app/schema_demo.sql](app/schema_demo.sql). Les modules `app/models/` lisent la base. Les contrôleurs `app/controllers/` transmettent les résultats aux vues et au JavaScript. La page **À propos** de l’application présente l’équipe.
+Le script [app/demo.py](app/demo.py) remplit la base MySQL avec les données de démonstration. Les fichiers `app/models/` récupèrent ces données. Les contrôleurs `app/controllers/` les transmettent aux pages HTML et au code JavaScript pour afficher les cartes et les graphiques. La page **À propos** de l’application présente l’équipe.
 
 [Projet dans le portfolio](https://kajan94.github.io/Portefolio/#oceanview)
