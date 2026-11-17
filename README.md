@@ -32,8 +32,18 @@ python run.py
 
 Ouvrir [localhost:5001](http://127.0.0.1:5001). La carte et les graphiques chargent des ressources externes. L’option `--admin-email admin@example.test` de `init-demo` permet de créer un compte d’administration local avec un mot de passe choisi au lancement.
 
+## Architecture et carte de chaleur
+
+![Parcours des données Copernicus du fichier NetCDF vers l’application web](docs/architecture-oceanview.png)
+
+Le projet d’origine a traité les données Copernicus Marine en Python avant de les charger dans MySQL. L’API Flask sert les mesures sélectionnées par zone, indicateur et période. Leaflet affiche la carte et Plotly présente les séries temporelles.
+
+![Carte de chaleur de la température de surface](docs/carte-chaleur-oceanview.jpg)
+
+Capture du projet d’origine. Le fond de carte est crédité dans l’image. La version publique fournit son propre jeu de démonstration.
+
 ## Suivre une donnée dans le code
 
 Le script [app/demo.py](app/demo.py) peuple le schéma [app/schema_demo.sql](app/schema_demo.sql). Les modules `app/models/` lisent la base. Les contrôleurs `app/controllers/` transmettent les résultats aux vues et au JavaScript. La page **À propos** de l’application présente l’équipe.
 
-[Projet dans le portfolio](https://kajan94.github.io/#oceanview)
+[Projet dans le portfolio](https://kajan94.github.io/Portefolio/#oceanview)
