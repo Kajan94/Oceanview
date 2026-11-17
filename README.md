@@ -22,7 +22,7 @@ Exemple d'une capture de la carte d'intensité de la demo.
 
 Évolution de la chlorophylle-a, avec les titres des axes et l’unité de mesure. Chaque capture s’ouvre en taille complète en cliquant dessus.
 
-## Fonctionnement du site
+## Exemple de démo du site
 
 1. Créer un compte de démonstration, puis ouvrir **Carte**.
 2. Sélectionner **Europe (Global)**, **Température (SST)** et **Carte d’intensité**, puis choisir le **1er août 2025 dans les deux dates**. Les points plus nombreux et les variations entre régions rendent les zones de couleur plus visibles. Une seule date évite de superposer plusieurs mois au même endroit.
