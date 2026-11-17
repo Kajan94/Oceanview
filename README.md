@@ -8,13 +8,13 @@ Projet d’équipe réalisé à cinq en BUT Informatique à l’IUT de Créteil-
 
 [![Page d’accueil d’OcéanView avec le logo et les accès à la carte, aux graphiques et aux favoris](docs/accueil-oceanview.png)](docs/accueil-oceanview.png)
 
-Page d’accueil du site avec le logo OcéanView.
+Page d’accueil du site Web.
 
 ### Carte d’intensité
 
 [![Carte d’intensité de la température de surface](docs/carte-chaleur-oceanview.jpg)](docs/carte-chaleur-oceanview.jpg)
 
-Capture du projet d’origine. Le fond de carte est crédité dans l’image.
+Exemple d'une capture de la carte d'intensité de la demo.
 
 ### Graphique d’évolution
 
@@ -22,7 +22,7 @@ Capture du projet d’origine. Le fond de carte est crédité dans l’image.
 
 Évolution de la chlorophylle-a, avec les titres des axes et l’unité de mesure. Chaque capture s’ouvre en taille complète en cliquant dessus.
 
-## Essayer un parcours de bout en bout
+## Fonctionnement du site
 
 1. Créer un compte de démonstration, puis ouvrir **Carte**.
 2. Sélectionner **Europe (Global)**, **Température (SST)** et **Carte d’intensité**, puis choisir le **1er août 2025 dans les deux dates**. Les points plus nombreux et les variations entre régions rendent les zones de couleur plus visibles. Une seule date évite de superposer plusieurs mois au même endroit.
