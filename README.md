@@ -10,8 +10,7 @@ Projet d’équipe réalisé à cinq en BUT Informatique à l’IUT de Créteil-
 2. Sélectionner **Europe (Global)**, **Température (SST)** et **Carte de points**. Pour la période du 1er janvier au 1er décembre 2025, le jeu de démo contient **192 valeurs de température** avant le regroupement selon le zoom.
 3. Dans **Graphiques → Évolution**, reprendre la période et l’indicateur. Le tracé présente **12 valeurs**. La carte et les graphiques proposent aussi des exports CSV et PDF.
 
-L’application d’origine a utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) pour 2024–2025. L’installation ci-dessous génère **576 mesures fictives**, réparties sur 16 positions, 12 dates et 3 variables. [Aperçu de la carte](docs/carte-demo.jpg) · [Crédits du fond OpenStreetMap](https://www.openstreetmap.org/copyright)
-
+L’application d’origine a utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) pour 2024–2025. L’installation ci-dessous génère **576 mesures fictives**, réparties sur 16 positions, 12 dates et 3 variables. [Aperçu de la carte](docs/carte-demo.jpg) 
 ## Lancer en local
 
 Préparer Python 3.12 ou 3.14 et MySQL 8.4. Avec un compte d’administration MySQL, exécuter ce script après avoir choisi un mot de passe local.
