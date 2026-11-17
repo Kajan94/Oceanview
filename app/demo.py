@@ -46,7 +46,11 @@ def init_demo(admin_email):
 
     admin_password = None
     if admin_email:
-        admin_password = click.prompt('Mot de passe administrateur', hide_input=True, confirmation_prompt=True)
+        admin_password = click.prompt(
+            'Mot de passe administrateur',
+            hide_input=True,
+            confirmation_prompt='Confirme le mot de passe administrateur',
+        )
         if len(admin_password) < 8:
             raise click.ClickException('Utilisez au moins 8 caractères.')
 
