@@ -50,7 +50,7 @@ python -m flask --app run init-demo
 python run.py
 ~~~
 
-Ouvrir [localhost:5001](http://127.0.0.1:5001). La carte et les graphiques chargent des ressources externes. La commande `python -m flask --app run init-demo --admin-email kajan@example.test` permet de créer un compte d’administration local avec un mot de passe choisi au lancement.
+Ouvrir [localhost:5001](http://127.0.0.1:5001). La carte et les graphiques chargent des ressources externes. 
 
 ### Mettre à jour une démo déjà installée
 
@@ -77,8 +77,7 @@ Pour créer un compte administrateur dans la base de démonstration, exécuter l
 python -m flask --app run init-demo --admin-email kajan@example.test
 ~~~
 
-Choisir un mot de passe d’au moins **8 caractères**, puis le confirmer. Démarrer le site avec `python run.py`, se connecter avec ce compte et ouvrir [le tableau de bord d’administration](http://127.0.0.1:5001/admin/dashboard).
-
+Choisir un mot de passe d’au moins **8 caractères**, puis le confirmer. Démarrer le site avec `python run.py` et se connecter avec le compte créer.
 ## Architecture
 
 [Voir le schéma d’architecture du projet](docs/architecture-oceanview.png)
