@@ -30,7 +30,7 @@ Exemple d'une capture de la carte d'intensité de la demo.
 4. Passer en **Carte de points** : le jeu de démo contient **421 valeurs par indicateur et par date**, soit **5 052 valeurs par indicateur** sur les 12 dates de 2025, avant le regroupement selon le zoom.
 5. Dans **Graphiques → Évolution**, choisir la période du 1er janvier au 1er décembre 2025. Le tracé présente **12 valeurs**. La carte et les graphiques proposent aussi des exports CSV et PDF.
 
-L’application d’origine a utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) pour 2024–2025. L’installation ci-dessous génère **15 156 mesures fictives**, réparties sur **421 positions**, 12 dates et 3 variables. Les points couvrent la Manche, le golfe de Gascogne, la Méditerranée occidentale, l’Atlantique et la Baltique. [Ancien aperçu de la carte de points](docs/carte-demo.jpg)
+L’application d’origine a utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) pour 2024–2025. L’installation ci-dessous génère **15 156 mesures fictives**, réparties sur **421 positions**, 12 dates et 3 variables. Les points couvrent la Manche, le golfe de Gascogne, la Méditerranée occidentale, l’Atlantique et la Baltique. [Aperçu de la carte de points](docs/carte-demo.jpg)
 
 ## Lancer en local
 
@@ -51,17 +51,6 @@ python run.py
 ~~~
 
 Ouvrir [localhost:5001](http://127.0.0.1:5001). La carte et les graphiques chargent des ressources externes. 
-
-### Mettre à jour une démo déjà installée
-
-Après avoir récupéré les fichiers récents du dépôt, arrêter le serveur avec **Ctrl+C**, puis relancer ces commandes dans l’environnement virtuel actif :
-
-~~~sh
-python -m flask --app run init-demo
-python run.py
-~~~
-
-La commande actualise les mesures fictives et ajoute les positions manquantes dans la base dédiée `*_demo`. Elle conserve les comptes, les favoris, les avis et l’historique. Elle peut être relancée sans dupliquer les mesures. Le redémarrage du serveur renouvelle aussi les données mises en cache.
 
 ## Administration
 
