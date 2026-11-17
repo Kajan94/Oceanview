@@ -42,7 +42,7 @@ CREATE USER 'oceanview'@'127.0.0.1' IDENTIFIED BY 'mot-de-passe-local-a-choisir'
 GRANT ALL PRIVILEGES ON oceanview_demo.* TO 'oceanview'@'127.0.0.1';
 ~~~
 
-Depuis la racine du dépôt, créer un environnement virtuel avec `python -m venv .venv`. Activer `.\.venv\Scripts\Activate.ps1` sous PowerShell ou `source .venv/bin/activate` sous macOS et Linux. Créer le dossier `instance/`, copier `config.example.py` vers `instance/config.py` et renseigner le mot de passe choisi.
+Depuis la racine du dépôt, créer un environnement virtuel avec `python -m venv .venv`. Activer `.\.venv\Scripts\Activate.ps1` sous PowerShell ou `source .venv/bin/activate` sous macOS et Linux. Créer le dossier `instance/`, copier le contenu de `config.example.py` vers `instance/config.py` et renseigner le mot de passe choisi.
 
 ~~~sh
 python -m pip install -r requirements.txt
