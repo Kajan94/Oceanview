@@ -12,27 +12,19 @@ La démonstration proposée dans ce dépôt génère **15 156 mesures fictives**
 
 [![Page d’accueil d’OcéanView avec le logo et les accès à la carte, aux graphiques et aux favoris](docs/accueil-oceanview.png)](docs/accueil-oceanview.png)
 
-Page d’accueil du site Web.
+Page d’accueil d’OcéanView, donnant accès à la carte interactive, aux graphiques et aux favoris de l’utilisateur.
 
 ### Carte d’intensité
 
 [![Carte d’intensité de la température de surface](docs/carte-chaleur-oceanview.jpg)](docs/carte-chaleur-oceanview.jpg)
 
-Exemple d'une capture de la carte d'intensité de la demo.
+Visualisation de la température de surface (SST) dans les zones maritimes européennes. Les filtres permettent de choisir l’indicateur, la zone géographique et la période à explorer sur les données fictives de démonstration.
 
 ### Graphique d’évolution
 
 [![Évolution de la chlorophylle avec les axes Date et Chlorophylle en mg/m³](docs/graphique-chlorophylle.png)](docs/graphique-chlorophylle.png)
 
-Évolution de la chlorophylle-a, avec les titres des axes et l’unité de mesure. Chaque capture s’ouvre en taille complète en cliquant dessus.
-
-## Exemple de démo du site
-
-1. Créer un compte de démonstration, puis ouvrir **Carte**.
-2. Sélectionner **Europe (Global)**, **Température (SST)** et **Carte d’intensité**, puis choisir le **1er août 2025 dans les deux dates**. Les points plus nombreux et les variations entre régions rendent les zones de couleur plus visibles. Une seule date évite de superposer plusieurs mois au même endroit.
-3. Comparer avec **Salinité (SSS)** sur l’Europe pour observer le contraste de la Baltique, puis avec **Chlorophylle (Chl-a)** dans la Manche. Les variations sont fictives et servent à illustrer les filtres et les visualisations.
-4. Passer en **Carte de points** : le jeu de démo contient **421 valeurs par indicateur et par date**, soit **5 052 valeurs par indicateur** sur les 12 dates de 2025, avant le regroupement selon le zoom.
-5. Dans **Graphiques → Évolution**, choisir la période du 1er janvier au 1er décembre 2025. Le tracé présente **12 valeurs**. La carte et les graphiques proposent aussi des exports CSV et PDF.
+Évolution de la concentration en chlorophylle-a (Chl-a), exprimée en mg/m³, sur la période sélectionnée. Le graphique permet de comparer les valeurs au fil du temps à partir des données fictives de démonstration.
 
 ## Lancer en local
 
