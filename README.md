@@ -1,6 +1,8 @@
 # OcéanView · Données marines sur carte et graphiques
 
-Projet d’équipe réalisé à cinq en BUT Informatique à l’IUT de Créteil-Vitry. L’application associe une API Flask, une base MySQL, une carte Leaflet et des graphiques Plotly pour explorer la température et la salinité de surface ainsi que la chlorophylle-a.
+OcéanView est une application web consacrée à l’exploration des données marines. Elle permet de consulter la température de surface (SST), la salinité de surface (SSS) ainsi que la concentration en chlorophylle-a (Chl-a) dans différentes zones maritimes européennes. Grâce à une carte interactive, des graphiques et des filtres par zone et par période, l’utilisateur peut comparer les mesures et suivre leur évolution dans le temps.
+
+L’application d’origine a utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) pour 2024–2025. L’installation ci-dessous génère **15 156 mesures fictives**, réparties sur **421 positions**, 12 dates et 3 variables. Les points couvrent la Manche, le golfe de Gascogne, la Méditerranée occidentale, l’Atlantique et la Baltique. [Aperçu de la carte de points](docs/carte-demo.jpg)
 
 ## Aperçu du site
 
@@ -29,8 +31,6 @@ Exemple d'une capture de la carte d'intensité de la demo.
 3. Comparer avec **Salinité (SSS)** sur l’Europe pour observer le contraste de la Baltique, puis avec **Chlorophylle (Chl-a)** dans la Manche. Les variations sont fictives et servent à illustrer les filtres et les visualisations.
 4. Passer en **Carte de points** : le jeu de démo contient **421 valeurs par indicateur et par date**, soit **5 052 valeurs par indicateur** sur les 12 dates de 2025, avant le regroupement selon le zoom.
 5. Dans **Graphiques → Évolution**, choisir la période du 1er janvier au 1er décembre 2025. Le tracé présente **12 valeurs**. La carte et les graphiques proposent aussi des exports CSV et PDF.
-
-L’application d’origine a utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) pour 2024–2025. L’installation ci-dessous génère **15 156 mesures fictives**, réparties sur **421 positions**, 12 dates et 3 variables. Les points couvrent la Manche, le golfe de Gascogne, la Méditerranée occidentale, l’Atlantique et la Baltique. [Aperçu de la carte de points](docs/carte-demo.jpg)
 
 ## Lancer en local
 
