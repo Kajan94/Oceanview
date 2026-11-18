@@ -89,7 +89,12 @@ Le projet d’origine a traité les données Copernicus Marine en Python avant d
 
 ## Fonctionnement de l’application
 
-Le script [app/demo.py](app/demo.py) remplit la base MySQL avec les données de démonstration. Les fichiers `app/models/` récupèrent ces données. Les contrôleurs `app/controllers/` les transmettent aux pages HTML et au code JavaScript pour afficher les cartes et les graphiques. La page **À propos** de l’application présente l’équipe.
+| Chemin | Rôle |
+| --- | --- |
+| `app/controllers/` | Routes Flask et API utilisée par la carte et les graphiques. |
+| `app/models/` | Connexion MySQL, requêtes et accès aux comptes. |
+| `app/templates/` et `app/static/` | Pages, carte et graphiques. |
+| `app/schema_demo.sql` et `app/demo.py` | Schéma MySQL et génération des données fictives. |
 
 [Projet dans le portfolio](https://kajan94.github.io/Portefolio/#oceanview)
 
