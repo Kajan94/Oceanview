@@ -2,7 +2,9 @@
 
 OcéanView est une application web consacrée à l’exploration des données marines. Elle permet de consulter la température de surface (SST), la salinité de surface (SSS) ainsi que la concentration en chlorophylle-a (Chl-a) dans différentes zones maritimes européennes. Grâce à une carte interactive, des graphiques et des filtres par zone et par période, l’utilisateur peut comparer les mesures et suivre leur évolution dans le temps.
 
-L’application d’origine a utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) pour 2024–2025. L’installation ci-dessous génère **15 156 mesures fictives**, réparties sur **421 positions**, 12 dates et 3 variables. Les points couvrent la Manche, le golfe de Gascogne, la Méditerranée occidentale, l’Atlantique et la Baltique. [Aperçu de la carte de points](docs/carte-demo.jpg)
+OcéanView est un projet universitaire réalisé en équipe. Dans notre application, nous avons utilisé des données de [Copernicus Marine](https://marine.copernicus.eu/) couvrant les années **2024 et 2025**.
+
+La démonstration proposée dans ce dépôt génère **15 156 mesures fictives**, réparties sur **421 positions**, 12 dates et 3 variables. Les points couvrent la Manche, le golfe de Gascogne, la Méditerranée occidentale, l’Atlantique et la Baltique. [Aperçu de la carte de points](docs/carte-demo.jpg)
 
 ## Aperçu du site
 
