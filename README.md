@@ -42,7 +42,27 @@ CREATE USER 'oceanview'@'127.0.0.1' IDENTIFIED BY 'mot-de-passe-local-a-choisir'
 GRANT ALL PRIVILEGES ON oceanview_demo.* TO 'oceanview'@'127.0.0.1';
 ~~~
 
-Depuis la racine du dépôt, créer un environnement virtuel avec `python -m venv .venv`. Activer `.\.venv\Scripts\Activate.ps1` sous PowerShell ou `source .venv/bin/activate` sous macOS et Linux. Créer le dossier `instance/`, copier le contenu de `config.example.py` vers `instance/config.py` et renseigner le mot de passe choisi.
+Depuis la racine du dépôt, créer un environnement virtuel et le fichier de configuration local.
+
+### Windows PowerShell
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+New-Item -ItemType Directory -Force instance
+Copy-Item config.example.py instance/config.py
+```
+
+### macOS ou Linux
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+mkdir -p instance
+cp config.example.py instance/config.py
+```
+
+Renseigner le mot de passe MySQL choisi dans `instance/config.py`, puis installer les dépendances, initialiser les données et démarrer l’application.
 
 ~~~sh
 python -m pip install -r requirements.txt
