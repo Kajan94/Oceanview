@@ -92,3 +92,7 @@ Le projet d’origine a traité les données Copernicus Marine en Python avant d
 Le script [app/demo.py](app/demo.py) remplit la base MySQL avec les données de démonstration. Les fichiers `app/models/` récupèrent ces données. Les contrôleurs `app/controllers/` les transmettent aux pages HTML et au code JavaScript pour afficher les cartes et les graphiques. La page **À propos** de l’application présente l’équipe.
 
 [Projet dans le portfolio](https://kajan94.github.io/Portefolio/#oceanview)
+
+## Travail en équipe
+
+Projet universitaire réalisé à cinq en BUT Informatique à l’IUT de Créteil-Vitry (UPEC). Nous avons partagé les tâches entre le travail sur les données et le développement de l’application. Les crédits de l’équipe figurent aussi dans la page **À propos**.
