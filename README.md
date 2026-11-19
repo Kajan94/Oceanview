@@ -28,7 +28,19 @@ Visualisation de la température de surface (SST) dans les zones maritimes europ
 
 ## Lancer en local
 
-Préparer Python 3.12 ou 3.14 et MySQL 8.4. Avec un compte d’administration MySQL, exécuter ce script.
+Préparer Python 3.12 ou 3.14 avec pip et MySQL 8.4.
+
+### Bibliothèques Python
+
+- **Flask 3.1.3** : application web.
+- **Flask-Caching 2.5.1** : mise en cache des résultats.
+- **Flask-Login 0.6.3** : gestion des sessions utilisateurs.
+- **Flask-WTF 1.2.2** : formulaires et protection CSRF.
+- **mysql-connector-python 9.7.0** : connexion à MySQL.
+
+### Préparer MySQL
+
+Avec un compte d’administration MySQL, exécuter ce script.
 
 ~~~sql
 CREATE DATABASE oceanview_demo CHARACTER SET utf8mb4;
@@ -36,13 +48,11 @@ CREATE USER 'oceanview'@'127.0.0.1' IDENTIFIED BY 'mot-de-passe-local-a-choisir'
 GRANT ALL PRIVILEGES ON oceanview_demo.* TO 'oceanview'@'127.0.0.1';
 ~~~
 
-Depuis la racine du dépôt, créer un environnement virtuel et le fichier de configuration local.
+Depuis la racine du dépôt, créer le fichier de configuration local.
 
 ### Windows PowerShell
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
 New-Item -ItemType Directory -Force instance
 Copy-Item config.example.py instance/config.py
 ```
@@ -50,8 +60,6 @@ Copy-Item config.example.py instance/config.py
 ### macOS ou Linux
 
 ```sh
-python -m venv .venv
-source .venv/bin/activate
 mkdir -p instance
 cp config.example.py instance/config.py
 ```
@@ -64,6 +72,8 @@ python -m flask --app run init-demo
 python run.py
 ~~~
 
+Sur macOS ou Linux, utiliser `python3` à la place de `python` si nécessaire.
+
 Ouvrir [localhost:5001](http://127.0.0.1:5001). La carte et les graphiques chargent des ressources externes. 
 
 ## Administration
@@ -74,7 +84,7 @@ L’espace `/admin/dashboard` est accessible aux comptes ayant le rôle **Admin*
 - **Logs système** — Consulter l’historique récent des actions enregistrées, avec leur date, l’utilisateur concerné et le détail.
 - **Avis utilisateurs** — Lire les notes et les commentaires laissés sur le site.
 
-Pour créer un compte administrateur dans la base de démonstration, exécuter la commande suivante depuis l’environnement Python du projet, avec une adresse encore inutilisée dans cette base.
+Pour créer un compte administrateur dans la base de démonstration, exécuter la commande suivante depuis un terminal à la racine du projet, avec une adresse encore inutilisée dans cette base.
 
 ~~~sh
 python -m flask --app run init-demo --admin-email kajan@example.test
