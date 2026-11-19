@@ -100,4 +100,4 @@ Le projet d’origine a traité les données Copernicus Marine en Python avant d
 
 ## Travail en équipe
 
-Projet universitaire réalisé à cinq en BUT Informatique à l’IUT de Créteil-Vitry (UPEC). Nous avons partagé les tâches entre le travail sur les données et le développement de l’application. Les crédits de l’équipe figurent aussi dans la page **À propos**.
+Projet universitaire réalisé à cinq en **deuxième année de BUT Informatique** à l’IUT de Créteil-Vitry (UPEC). Nous avons partagé les tâches entre le travail sur les données et le développement de l’application. Les crédits de l’équipe figurent aussi dans la page **À propos**.
