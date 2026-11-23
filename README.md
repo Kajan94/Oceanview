@@ -6,8 +6,6 @@ Dans ce projet universitaire, nous avons utilisé les données de [Copernicus Ma
 
 ## Aperçu du site
 
-Les captures ci-dessous présentent l’interface de la précédente démonstration avec des données fictives. L’installation décrite plus bas utilise désormais les données marines originales incluses dans le dépôt.
-
 ### Accueil
 
 [![Page d’accueil d’OcéanView avec le logo et les accès à la carte, aux graphiques et aux favoris](docs/accueil-oceanview.png)](docs/accueil-oceanview.png)
