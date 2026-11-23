@@ -101,8 +101,6 @@ Choisir un mot de passe d’au moins **8 caractères**, puis le confirmer. Se co
 
 Le projet a traité les données Copernicus Marine en Python avant de les charger dans MySQL. L’API Flask sert les mesures sélectionnées par zone, indicateur et période. Leaflet affiche la carte et Plotly les graphiques.
 
-La base locale contient toutes les mesures de l’export. Les requêtes de visualisation en sélectionnent un échantillon pour limiter le volume envoyé au navigateur.
-
 ## Organisation du code
 
 | Chemin | Rôle |
