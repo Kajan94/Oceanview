@@ -34,18 +34,6 @@ Préparer **Python 3.12 avec pip** et **MySQL 8.0 ou 8.4**.
 
 L’import de plus de 17 millions de mesures peut prendre plusieurs minutes et nécessite plusieurs Go d’espace libre pour MySQL. La progression s’affiche dans le terminal.
 
-### Bibliothèques Python
-
-Toutes ces bibliothèques sont déclarées dans `requirements.txt` :
-
-- **Flask 3.1.3** : application web.
-- **Flask-Caching 2.5.1** : mise en cache des résultats.
-- **Flask-Login 0.6.3** : gestion des sessions utilisateurs.
-- **Flask-WTF 1.2.2** : formulaires et protection CSRF.
-- **mysql-connector-python 9.7.0** : connexion à MySQL.
-
-Leaflet et Plotly sont chargés dans les pages pour la carte et les graphiques ; ils ne nécessitent pas d’installation Python.
-
 ### Préparer MySQL
 
 Avec un compte d’administration MySQL, créer une **nouvelle base vide** pour l’installation locale :
