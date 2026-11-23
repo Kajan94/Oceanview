@@ -96,7 +96,11 @@ def init_database():
 @with_appcontext
 def create_admin(email):
     """Crée un administrateur local après l'import des données."""
-    password = click.prompt('Mot de passe administrateur', hide_input=True, confirmation_prompt=True)
+    password = click.prompt(
+        'Mot de passe administrateur',
+        hide_input=True,
+        confirmation_prompt='Confirmez le mot de passe administrateur',
+    )
     if len(password) < 8:
         raise click.ClickException('Utilisez au moins 8 caractères.')
     try:
