@@ -44,27 +44,9 @@ CREATE USER 'oceanview'@'127.0.0.1' IDENTIFIED BY 'mot-de-passe-local-a-choisir'
 GRANT ALL PRIVILEGES ON oceanview_local.* TO 'oceanview'@'127.0.0.1';
 ~~~
 
-Si le compte MySQL `oceanview` existe déjà, conserver son mot de passe et exécuter seulement la création de la nouvelle base et l’attribution des droits. La base d’origine `oceanview` peut être conservée séparément.
+### Configurer la connexion MySQL
 
-### Créer la configuration locale
-
-Depuis la racine du dépôt :
-
-**Windows PowerShell**
-
-~~~powershell
-New-Item -ItemType Directory -Force instance
-Copy-Item config.example.py instance/config.py
-~~~
-
-**macOS ou Linux**
-
-~~~sh
-mkdir -p instance
-cp config.example.py instance/config.py
-~~~
-
-Dans `instance/config.py`, renseigner le mot de passe MySQL du compte utilisé. Vérifier le nom de la base : `DB_NAME = 'oceanview_local'`.
+Ouvrir le fichier [`instance/config.py`](instance/config.py), déjà inclus dans le dépôt, et renseigner le mot de passe MySQL dans `DB_PASSWORD`. Adapter `DB_USER` si un autre compte est utilisé et vérifier le nom de la base : `DB_NAME = 'oceanview_local'`.
 
 ### Installer, importer et démarrer
 
@@ -76,7 +58,7 @@ python run.py
 
 Sur macOS ou Linux, utiliser `python3` à la place de `python` si nécessaire.
 
-Ouvrir [localhost:5001](http://127.0.0.1:5001), créer un compte depuis **Inscription**, puis se connecter pour accéder à la carte et aux graphiques. Les comptes, favoris, avis et historiques de l’équipe ne sont pas inclus dans l’export ; ces espaces sont créés vides pour l’utilisation locale.
+Ouvrir [localhost:5001](http://127.0.0.1:5001), créer un compte depuis **Inscription**, puis se connecter pour accéder à la carte et aux graphiques.
 
 La commande `init-db` vérifie l’intégrité de l’archive, crée le schéma et importe les données originales. Elle refuse une base contenant déjà des tables.
 

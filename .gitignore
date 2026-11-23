@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 *.py[cod]
-instance/
+instance/*
+!instance/config.py
 backups/
 .env
