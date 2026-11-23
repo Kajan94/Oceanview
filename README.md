@@ -32,8 +32,6 @@ Préparer **Python 3.12 avec pip** et **MySQL 8.0 ou 8.4**.
 
 [Télécharger le dépôt](https://github.com/Kajan94/Oceanview/archive/refs/heads/main.zip), le décompresser, puis ouvrir un terminal à sa racine. Le fichier `data/oceanview.zip` contient l’export complet des trois tables marines, soit environ **248 Mo compressés**. Il doit rester à cet emplacement, sans être décompressé manuellement.
 
-Les tables `utilisateur`, `favoris_perso`, `avis` et `historique` sont exclues du ZIP pour ne pas diffuser les données personnelles des utilisateurs ; elles sont créées vides lors de l’installation.
-
 L’import de plus de 17 millions de mesures peut prendre plusieurs minutes et nécessite plusieurs Go d’espace libre pour MySQL. La progression s’affiche dans le terminal.
 
 ### Préparer MySQL
