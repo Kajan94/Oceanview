@@ -14,13 +14,13 @@ Page d’accueil donnant accès à la carte interactive, aux graphiques et aux f
 
 ### Carte d’intensité
 
-[![Carte d’intensité de la température de surface](docs/carte-chaleur-oceanview.jpg)](docs/carte-chaleur-oceanview.jpg)
+[![Carte d’intensité de la température de surface](https://github.com/user-attachments/assets/91750373-c310-4747-a2df-91a3a1cc1a25)](https://github.com/user-attachments/assets/91750373-c310-4747-a2df-91a3a1cc1a25)
 
 Visualisation de la température de surface (SST). Les filtres permettent de choisir l’indicateur, la zone géographique et la période à explorer. [Voir aussi la carte de points](docs/carte-demo.jpg).
 
 ### Graphique d’évolution
 
-[![Évolution de la chlorophylle avec les axes Date et Chlorophylle en mg/m³](docs/graphique-chlorophylle.png)](docs/graphique-chlorophylle.png)
+[![Évolution de la chlorophylle avec les axes Date et Chlorophylle en mg/m³](https://github.com/user-attachments/assets/b73db5d4-e8ee-4bd9-95b0-489b50fa6ce3)](https://github.com/user-attachments/assets/b73db5d4-e8ee-4bd9-95b0-489b50fa6ce3)
 
 Évolution de la concentration en chlorophylle-a (Chl-a), exprimée en mg/m³, sur la période sélectionnée.
 
